@@ -1,0 +1,34 @@
+### INSIEMI
+
+set SITI :=  D1 D2; 
+set ENTI := N1 N2 N3 ; 
+
+
+### PARAMETRI 
+#Quantità massima di prodotto del deposito
+param capacita := 
+D1  10 
+D2  10 ;
+#Costi deposito
+param f :=
+D1  1 
+D2  1 ;
+#Costo di stoccaggio
+param d :=
+D1  1 
+D2  2 ;
+#Scorta del deposito
+param scorta :=
+D1  0 
+D2  0 ;
+#Quantità di prodotto richiesta dagli enti
+param richiesta := 
+N1  8 
+N2  3 
+N3  2 ;
+#Costo di trasporto per unità di prodotto
+param  c :
+N1 N2  N3 :=
+D1 1 1 1 
+D2 1 1 1 ;
+

@@ -1,0 +1,10 @@
+reset;
+option solver cplex;
+#option solver gurobi;
+model logic.mod;
+data logic_a.dat;
+#data logic_b.dat;
+solve; 
+display x;
+display y;
+display costo_totale;

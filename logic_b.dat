@@ -1,0 +1,76 @@
+### INSIEMI
+
+set SITI :=  D1 D2 D3 D4 D5 D6 D7 D8 D9 D10; 
+set ENTI := E1 E2 E3 E4 E5 E6 ; 
+
+
+### PARAMETRI 
+#Quantità massima di prodotto del deposito
+param capacita := 
+D1  50 
+D2  50 
+D3  50 
+D4  50
+D5  50
+D6  50
+D7	50
+D8  50
+D9  50
+D10 50;
+#Costi deposito
+param f :=
+D1  10 
+D2  20 
+D3  30
+D4  40 
+D5  50 
+D6  60
+D7  70
+D8  80
+D9  90
+D10 100;
+#Costo di stoccaggio
+param d :=
+D1  1 
+D2  2 
+D3  5
+D4  1 
+D5  2 
+D6  5
+D7  1 
+D8  2 
+D9  5
+D10 3 ;
+#Scorta del deposito
+param scorta :=
+D1  10
+D2  10
+D3  10
+D4  10
+D5  10
+D6  10
+D7  10
+D8  10
+D9  10
+D10	10 ;
+#Quantità di prodotto richiesta dagli enti
+param richiesta := 
+E1  120 
+E2  30 
+E3  20 
+E4	5
+E5 	1
+E6	15;
+#Costo di trasporto per unità di prodotto
+param  c :
+  E1 E2 E3 E4 E5 E6 :=
+D1 1 1 1 1 1 1
+D2 6 7 8 9 1 2
+D3 2 1 1 3 4 5
+D4 2 1 4 8 7 1 
+D5 1 2 3 4 5 6
+D6 6 7 8 9 1 2 
+D7 2 3 4 9 8 8
+D8 8 8 8 8 3 1
+D9 7 6 5 7 9 0
+D10 7 2 9 8 7 7;
